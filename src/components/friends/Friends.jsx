@@ -8,10 +8,10 @@ const Friends = () => {
     return (
         <div className={styles.container}>
             <SearchFriend />
+            <div className={styles.friendCount}>
+                <p>All Friends - {friends.length}</p>
+            </div>
             <div className={styles.inner}>
-                <div className={styles.friendCount}>
-                    <p>All Friends - {friends.length}</p>
-                </div>
                 {friends.map(user => {
                     return (
                         <div key={user.id} className={styles.row}>
