@@ -1,4 +1,4 @@
-import Friend from "./friend/Friend";
+import User from "../user/User";
 import styles from "./friends.module.css";
 import { generateUsers } from "@/lib/exampleData";
 
@@ -7,7 +7,7 @@ const Friends = () => {
     return (
         <div className={styles.container}>
             {users.map(user => {
-                return <Friend key={user.id} user={user} />
+                return <User key={user.id} user={user} />
             })}
         </div>
     );

@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.statusIcon {
+    position: relative;
+    top: 60%;
+    left: 60%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: var(--bg-c-dark);
+}
+
+.statusIcon .inner {
+    --size: 60%;
+    content: "";
+    position: absolute;
+    top: calc(50% - (var(--size) / 2));
+    left: calc(50% - (var(--size) / 2));
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+}
+
+.inner.online {
+    background-color: #23a55a;
+}
+
+.inner.idle {
+    background-color: #f0b232;
+}
+
+.inner.dnd {
+    background-color: #f23f43;
+}
+
+.inner.offline {
+    border: 2px solid #80848e;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.status {
+    opacity: 50%;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
