@@ -27,7 +27,7 @@ const StatusIcon = ({status}: {status: string}) => {
     );
 }
 
-const User = ({user}: { user: {id: number, status: string} }) => {
+const User = ({user}: { user: {id: number, username: string, status: string} }) => {
     return (
         <div className={styles.container}>
             <div className={styles.profile}>
@@ -35,7 +35,7 @@ const User = ({user}: { user: {id: number, status: string} }) => {
             </div>
             <div>
                 <div className={styles.username}>
-                    {user.id}
+                    {user.username}
                 </div>
                 <div className={styles.status}>
                     {user.status}

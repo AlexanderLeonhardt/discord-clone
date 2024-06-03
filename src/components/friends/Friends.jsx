@@ -1,14 +1,14 @@
 "use client"
 import styles from "./friends.module.css";
 import { useState } from "react";
-import { generatedUsers } from "@/lib/exampleData";
+import { exampleusers } from "@/lib/exampleData";
 import User from "../user/User";
 
 const Friends = () => {
-    const friends = generatedUsers;
+    const friends = exampleusers;
 
     const [filter, setFilter] = useState('');
-    const filteredFriends = friends.filter(user => user.id.includes(filter.toLowerCase()) || filter === '');
+    const filteredFriends = friends.filter(user => user.username.toLowerCase().includes(filter.toLowerCase()) || filter === '');
 
     return (
         <div className={styles.container}>
