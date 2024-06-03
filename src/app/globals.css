@@ -1,9 +1,13 @@
 :root {
+    --bg-c-highlight: #3a3c42;
+    
     --bg-c-dark: #313338;
     --bg-c-darker: #2b2d31;
     --bg-c-darkest: #1e1f22;
 
     --text-c: rgb(250, 250, 250);
+
+    --header-height: 50px;
 }
 
 *, *::before, *::after {

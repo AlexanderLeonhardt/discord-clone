@@ -7,11 +7,13 @@ const Friends = () => {
     const friends = generateUsers(50);
     return (
         <div className={styles.container}>
-            <SearchFriend />
-            <div className={styles.friendCount}>
-                <p>All Friends - {friends.length}</p>
+            <div className={styles.friendsHeader}>
+                <SearchFriend />
+                <div className={styles.friendCount}>
+                    <p>All Friends - {friends.length}</p>
+                </div>
             </div>
-            <div className={styles.inner}>
+            <div className={styles.friendList}>
                 {friends.map(user => {
                     return (
                         <div key={user.id} className={styles.row}>
