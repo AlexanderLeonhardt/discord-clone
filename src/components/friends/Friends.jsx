@@ -8,6 +8,7 @@ const Friends = () => {
     const friends = generatedUsers;
 
     const [filter, setFilter] = useState('');
+    const filteredFriends = friends.filter(user => user.id.includes(filter.toLowerCase()) || filter === '');
 
     return (
         <div className={styles.container}>
@@ -19,13 +20,11 @@ const Friends = () => {
                     </div>
                 </div>
                 <div className={styles.friendCount}>
-                    <p>All Friends - {friends.length}</p>
+                    <p>All Friends - {filteredFriends.length}</p>
                 </div>
             </div>
             <div className={styles.friendList}>
-                {friends
-                    .filter(user => user.id.includes(filter.toLowerCase()) || filter === '')
-                    .map(user => {
+                {filteredFriends.map(user => {
                     return (
                         <div key={user.id} className={styles.row}>
                             <User user={user} />
