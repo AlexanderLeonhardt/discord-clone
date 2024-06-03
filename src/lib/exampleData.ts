@@ -5,7 +5,7 @@ const generateUsers = (amount: number) => {
         const status = statusList[Math.floor(Math.random() * statusList.length)];
         users.push(
             {
-                id: Math.floor(Math.random() * 99999),
+                id: "" + Math.floor(Math.random() * 99999),
                 status: status
             }
         );
@@ -13,4 +13,6 @@ const generateUsers = (amount: number) => {
     return users;
 };
 
-export { generateUsers };
+const generatedUsers = generateUsers(50);
+
+export { generatedUsers };
