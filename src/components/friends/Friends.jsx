@@ -8,7 +8,11 @@ const Friends = () => {
     const friends = exampleusers;
 
     const [filter, setFilter] = useState('');
-    const filteredFriends = friends.filter(user => user.username.toLowerCase().includes(filter.toLowerCase()) || filter === '');
+    const filteredFriends = friends.filter(user => user.username.toLowerCase().includes(filter.toLowerCase()) || filter === '').sort((a, b) => {
+        if (a.username < b.username) return -1;
+        if (a.name > b.name) return 1;
+        return 0;
+    });
 
     return (
         <div className={styles.container}>
