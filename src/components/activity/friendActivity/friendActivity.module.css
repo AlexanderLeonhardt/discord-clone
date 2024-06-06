@@ -1,3 +1,11 @@
 .container {
-    
+    background-color: var(--bg-c-darker);
+    border-radius: 10px;
+    border: 1px solid var(--bg-c-highlight);
+    padding: 16px;
+}
+
+.container:hover {
+    background-color: var(--bg-c-darkest);
+    cursor: pointer;
 }

@@ -27,7 +27,11 @@ const StatusIcon = ({status}: {status: string}) => {
     );
 }
 
-const User = ({user}: { user: {id: number, username: string, status: string} }) => {
+const User = ({user}: { user: {id: number, username: string, status: string, activity?: string} }) => {
+
+    let displayStatus = user.status;
+    if (user.activity) displayStatus = user.activity;
+
     return (
         <div className={styles.container}>
             <div className={styles.profile}>
@@ -37,8 +41,9 @@ const User = ({user}: { user: {id: number, username: string, status: string} }) 
                 <div className={styles.username}>
                     {user.username}
                 </div>
+                {}
                 <div className={styles.status}>
-                    {user.status}
+                    {displayStatus}
                 </div>
             </div>
         </div>

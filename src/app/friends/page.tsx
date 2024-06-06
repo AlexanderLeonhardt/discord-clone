@@ -7,8 +7,10 @@ const FriendsPage = () => {
     return (
         <div className={styles.wrapper}>
             <Header />
-            <Friends />
-            <Activity />
+            <div className={styles.main}>
+                <Friends />
+                <Activity />
+            </div>
         </div>
     );
 }

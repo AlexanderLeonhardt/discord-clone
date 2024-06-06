@@ -17,7 +17,8 @@ const exampleusers = [
     {
         id: 52648923,
         username: "Hunter Wright",
-        status: "online"
+        status: "online",
+        activity: "Doing something"
     },
     {
         id: 48753724,
@@ -72,7 +73,8 @@ const exampleusers = [
     {
         id: 72661652,
         username: "Whitney Manning",
-        status: "online"
+        status: "online",
+        activity: "Doing something"
     },
     {
         id: 72422251,
@@ -147,7 +149,8 @@ const exampleusers = [
     {
         id: 72567410,
         username: "Zahir Baxter",
-        status: "dnd"
+        status: "dnd",
+        activity: "Doing something"
     },
     {
         id: 65132164,
@@ -167,7 +170,8 @@ const exampleusers = [
     {
         id: 11546496,
         username: "Hugo Hardy",
-        status: "dnd"
+        status: "dnd",
+        activity: "Doing something"
     },
     {
         id: 99318049,
@@ -207,7 +211,8 @@ const exampleusers = [
     {
         id: 52170488,
         username: "Jaziel Perez",
-        status: "online"
+        status: "online",
+        activity: "Doing something"
     },
     {
         id: 41370861,
@@ -237,7 +242,8 @@ const exampleusers = [
     {
         id: 66967286,
         username: "Adam Figueroa",
-        status: "online"
+        status: "online",
+        activity: "Doing something"
     },
     {
         id: 94738822,
