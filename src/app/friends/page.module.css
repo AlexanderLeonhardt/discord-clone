@@ -6,3 +6,9 @@
     display: grid;
     grid-template-columns: auto 420px;
 }
+
+@media (max-width: 1200px) {
+    .main {
+        display: block;
+    }
+}

@@ -5,3 +5,9 @@
     gap: 8px;
     border-left: 1px solid var(--bg-c-highlight);
 }
+
+@media (max-width: 1200px) {
+    .container {
+        display: none;
+    }
+}
